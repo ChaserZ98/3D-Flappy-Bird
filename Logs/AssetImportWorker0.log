@@ -1,0 +1,21 @@
+Using pre-set license
+Built from 'trunk' branch; Version is '2021.2.0a6 (dc497bf8326a) revision 14436731'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19041.867; Version 2004; 64bit' Language: 'zh' Physical Memory: 16331 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+E:\Unity\2021.2.0a6\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+I:/Unity Workspace/3D flappy bird
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+57862
+Successfully changed project path to: I:/Unity Workspace/3D flappy bird
+I:/Unity Workspace/3D flappy bird
+Using Asset Import Pipeline V2.
