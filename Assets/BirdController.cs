@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BirdController : MonoBehaviour{
-    protected float jump_speed = 5.0f;
+    public float jump_speed = 5.0f;
     public GameObject bird;
     void Start(){
         Animation animation = bird.GetComponent<Animation>();
