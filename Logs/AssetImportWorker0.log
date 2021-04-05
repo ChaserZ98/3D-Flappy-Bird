@@ -19,3 +19,116 @@ Logs/AssetImportWorker0.log
 Successfully changed project path to: I:/Unity Workspace/3D flappy bird
 I:/Unity Workspace/3D flappy bird
 Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 50.40 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.2.0a6 (dc497bf8326a)
+[Subsystems] Discovering subsystems at path E:/Unity/2021.2.0a6/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path I:/Unity Workspace/3D flappy bird/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2080 SUPER (ID=0x1e81)
+    Vendor:   NVIDIA
+    VRAM:     8010 MB
+    Driver:   27.21.14.5671
+Initialize mono
+Mono path[0] = 'E:/Unity/2021.2.0a6/Editor/Data/Managed'
+Mono path[1] = 'E:/Unity/2021.2.0a6/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'E:/Unity/2021.2.0a6/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56616
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: E:/Unity/2021.2.0a6/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.000827 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 51.98 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.734 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002148 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.861 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2679 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 101.2 MB.
+System memory in use after: 101.3 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 3138.
+Total: 1.812800 ms (FindLiveObjects: 0.233400 ms CreateObjectMapping: 0.072500 ms MarkObjects: 1.442300 ms  DeleteObjects: 0.063700 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/BMFont/FontTest.mat
+  artifactKey: Guid(1e31ceaa96489f343af33898d0d70a96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BMFont/FontTest.mat using Guid(1e31ceaa96489f343af33898d0d70a96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd525836c6d73ea397addb241a3c5c5aa') in 0.392017 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000145 seconds.
+  path: Assets/BMFont
+  artifactKey: Guid(270a628ea7e17b545b06839099761834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BMFont using Guid(270a628ea7e17b545b06839099761834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86e908abebf67826f85252d2266791cc') in 0.004756 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000121 seconds.
+  path: Assets/BMFont/FontTest_0.png
+  artifactKey: Guid(c5c2d6191ca54404eb3cae18220ccaf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BMFont/FontTest_0.png using Guid(c5c2d6191ca54404eb3cae18220ccaf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c04c9c14472fb7240b105c4e2745006') in 0.064664 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/BMFont/FontTest.fontsettings
+  artifactKey: Guid(0353ffcd73f859d4f8f570c6e5f11446) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BMFont/FontTest.fontsettings using Guid(0353ffcd73f859d4f8f570c6e5f11446) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '566aaecf210262d311f08c87ec900f1c') in 0.004508 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.220406 seconds.
+  path: Assets/BMFont/Editor
+  artifactKey: Guid(9abd7980c5447be428e08ff572b42843) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BMFont/Editor using Guid(9abd7980c5447be428e08ff572b42843) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0656b52acd532d616f34e5e2fd468588') in 0.005631 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.902422 seconds.
+  path: Assets/BMFont/Editor/BMFontReader.cs
+  artifactKey: Guid(50bd045ae82522847a3f3751a1396bb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BMFont/Editor/BMFontReader.cs using Guid(50bd045ae82522847a3f3751a1396bb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '859afb51178583302bc437a4c9ce9410') in 0.015734 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.809093 seconds.
+  path: Assets/BMFont/Editor/BMGlyph.cs
+  artifactKey: Guid(c51518ed2e3347e4992b6cdea56137f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BMFont/Editor/BMGlyph.cs using Guid(c51518ed2e3347e4992b6cdea56137f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'faccefc32fc67b5ccbb490bba40cc6b1') in 0.004974 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.936333 seconds.
+  path: Assets/BMFont/Editor/BMFont.cs
+  artifactKey: Guid(723c82bb020988349b78f678d4d672ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BMFont/Editor/BMFont.cs using Guid(723c82bb020988349b78f678d4d672ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59bb2b8e3bfe13ef0d68934797167568') in 0.001613 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.340390 seconds.
+  path: Assets/BMFont/Editor/BMFontEditor.cs
+  artifactKey: Guid(3eb236b74ae6720489820af9ebaa41e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BMFont/Editor/BMFontEditor.cs using Guid(3eb236b74ae6720489820af9ebaa41e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe7b3b2608a89e6f40077cee68fd0295') in 0.004717 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.958425 seconds.
+  path: Assets/BMFont/Editor/BetterList.cs
+  artifactKey: Guid(a4dccc12d92401848828c52cfbce7254) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BMFont/Editor/BetterList.cs using Guid(a4dccc12d92401848828c52cfbce7254) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85f66839355b9688e53a1518b2b175f3') in 0.004946 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.724024 seconds.
+  path: Assets/BMFont/Editor/ByteReader.cs
+  artifactKey: Guid(01105718d0882a542895a2d8ad26ba40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BMFont/Editor/ByteReader.cs using Guid(01105718d0882a542895a2d8ad26ba40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1dbd195abe805b25748c539587fee8f') in 0.004811 seconds 
