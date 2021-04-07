@@ -342,16 +342,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
     - target: {fileID: -7074429475929585407, guid: 9ce26c09230e3dc4087735dd0dc6761c,
         type: 3}
-=======
-    - target: {fileID: -7644318217325246848, guid: 9ce26c09230e3dc4087735dd0dc6761c, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 9224580bc21d29244b9d536c1b7e6a23, type: 2}
-    - target: {fileID: -7074429475929585407, guid: 9ce26c09230e3dc4087735dd0dc6761c, type: 3}
->>>>>>> Stashed changes
       propertyPath: m_Convex
       value: 1
       objectReference: {fileID: 0}
