@@ -4,13 +4,20 @@ using UnityEngine;
 
 public class BirdController : MonoBehaviour{
     // public Text score;
-    private bool isGameOver = false;
+    public bool isGameOver = false;
+    public bool isGameStart = false;
     // public GameObject camera;
 
     public float jump_speed = 5.0f;
     public GameObject bird;
+    void GameStart(bool flag){
+        isGameStart = flag;
+        GetComponent<Rigidbody>().isKinematic = false;
+    }
     void Start(){
         // Physics.gravity = new Vector3(0, -50, 0);
+        isGameOver = false;
+        isGameStart = false;
         GetComponent<Rigidbody>().centerOfMass = Vector3.zero;
         GetComponent<Rigidbody>().inertiaTensorRotation = Quaternion.identity;
         transform.localPosition = new Vector3(15f, 5f, 0f);
@@ -39,30 +46,35 @@ public class BirdController : MonoBehaviour{
     //     }
     // }
     void Update(){
-        if(Input.GetKeyDown(KeyCode.Space)){
-            this.GetComponent<Rigidbody>().velocity = Vector3.up * this.jump_speed;
-            bird.GetComponent<Animation>().Stop();
+        if(!isGameStart){
             bird.GetComponent<Animation>().Play();
         }
-        if(Input.GetKey(KeyCode.A)){
-            transform.Translate(Vector3.right * Time.deltaTime * 4);
-            // if(CheckAngle(transform.localEulerAngles.z) <= 30f){
-            //     transform.Rotate(new Vector3(0, 0, 30 * Time.deltaTime));
-            // }
-        }
-        else if(Input.GetKey(KeyCode.D)){
-            transform.Translate(Vector3.left * Time.deltaTime * 4);
-            // if(CheckAngle(transform.localEulerAngles.z) >= -30f){
-            //     transform.Rotate(new Vector3(0, 0, -30 * Time.deltaTime));
-            // }
-        }
         else{
-            // if(CheckAngle(transform.localEulerAngles.z) < 0){
-            //     transform.Rotate(new Vector3(0, 0, 30 * Time.deltaTime));
-            // }
-            // else if(CheckAngle(transform.localEulerAngles.z) > 0){
-            //     transform.Rotate(new Vector3(0, 0, -30 * Time.deltaTime));
-            // }
+            if(Input.GetKeyDown(KeyCode.Space)){
+                this.GetComponent<Rigidbody>().velocity = Vector3.up * this.jump_speed;
+                bird.GetComponent<Animation>().Stop();
+                bird.GetComponent<Animation>().Play();
+            }
+            if(Input.GetKey(KeyCode.A)){
+                transform.Translate(Vector3.right * Time.deltaTime * 4);
+                // if(CheckAngle(transform.localEulerAngles.z) <= 30f){
+                //     transform.Rotate(new Vector3(0, 0, 30 * Time.deltaTime));
+                // }
+            }
+            else if(Input.GetKey(KeyCode.D)){
+                transform.Translate(Vector3.left * Time.deltaTime * 4);
+                // if(CheckAngle(transform.localEulerAngles.z) >= -30f){
+                //     transform.Rotate(new Vector3(0, 0, -30 * Time.deltaTime));
+                // }
+            }
+            else{
+                // if(CheckAngle(transform.localEulerAngles.z) < 0){
+                //     transform.Rotate(new Vector3(0, 0, 30 * Time.deltaTime));
+                // }
+                // else if(CheckAngle(transform.localEulerAngles.z) > 0){
+                //     transform.Rotate(new Vector3(0, 0, -30 * Time.deltaTime));
+                // }
+            }
         }
     }
     public float CheckAngle(float value){
