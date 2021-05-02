@@ -28,11 +28,11 @@ public class BirdController : MonoBehaviour{
     void OnTriggerEnter(Collider other){
         if(other.gameObject.tag == "obstacle"){
             isGameOver = true;
-            Debug.Log(1);
+            // Debug.Log(1);
             GetComponent<Rigidbody>().isKinematic = true;
         }
         else{
-            Debug.Log(other.gameObject.name);
+            // Debug.Log(other.gameObject.name);
         }
     }
     void Update(){

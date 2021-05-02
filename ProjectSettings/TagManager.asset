@@ -8,6 +8,8 @@ TagManager:
   - points
   - obstacle
   - Undefined
+  - ZhuZi
+  - obstacleContainer
   layers:
   - Default
   - TransparentFX

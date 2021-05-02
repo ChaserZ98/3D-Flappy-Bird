@@ -7,9 +7,11 @@ public class UIController : MonoBehaviour
 {
 	public GameObject startMenu;
 	public GameObject scoreBoard;
+    public int score;
     // Start is called before the first frame update
     void Start()
     {
+        score = 0;
     	startMenu.SetActive(true);
     	scoreBoard = GameObject.Find("Canvas/Score");
     	scoreBoard.SetActive(false);
@@ -23,10 +25,14 @@ public class UIController : MonoBehaviour
     void HideStartMenu(){
     	//Game start
     	startMenu.SetActive(false);
-    	scoreBoard.GetComponent<Text>().text = "0";
+    	scoreBoard.GetComponent<Text>().text = score.ToString();
     	scoreBoard.SetActive(true);
     }
     void showStartMenu(){
     	startMenu.SetActive(true);
+    }
+    void addPoint(){
+        score++;
+        scoreBoard.GetComponent<Text>().text = score.ToString();
     }
 }
