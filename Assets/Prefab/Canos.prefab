@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 65915488842924482}
   m_Layer: 0
   m_Name: Center
-  m_TagString: pontos
+  m_TagString: points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 65505737168036176}
   m_Layer: 0
   m_Name: Up
-  m_TagString: canos
+  m_TagString: obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -269,7 +269,7 @@ GameObject:
   - component: {fileID: 65790053767539796}
   m_Layer: 0
   m_Name: Down
-  m_TagString: canos
+  m_TagString: obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

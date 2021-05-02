@@ -17,5 +17,8 @@ public class CameraController : MonoBehaviour
     void Update()
     {
         transform.position = offset + birdTransform.position;
+        // if(transform.position.y <= 0){
+        //     transform.position.y = 0;
+        // }
     }
 }

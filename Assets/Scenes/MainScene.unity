@@ -2296,8 +2296,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 897f389757dcc0b4da6bb96fe7ba68f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameStart: 1
-  gameEnd: 0
+  isGameStart: 0
+  isGameOver: 0
   cano: {fileID: 1741921204330992, guid: 299a8f47ff453c24a85a3ffa69c0e67d, type: 3}
 --- !u!1 &1136808298
 GameObject:
@@ -2410,7 +2410,7 @@ GameObject:
   - component: {fileID: 1148294798}
   m_Layer: 0
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4148,7 +4148,7 @@ MonoBehaviour:
   leftWall: {fileID: 2100000, guid: ad4a795a1de8f9a4aa3af288dbf024ac, type: 2}
   rightWall: {fileID: 2100000, guid: 600586c9f54ccbb4ca7b03928d84d597, type: 2}
   ground: {fileID: 2100000, guid: c392f9e85dc906d4aa136cb545d2580a, type: 2}
-  velocity: 0.6
+  velocity: 0.3
 --- !u!4 &1973450066
 Transform:
   m_ObjectHideFlags: 0

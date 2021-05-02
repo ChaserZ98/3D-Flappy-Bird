@@ -25,31 +25,21 @@ public class BirdController : MonoBehaviour{
         Animation animation = bird.GetComponent<Animation>();
         animation.Stop();
     }
-    // void FixedUpdate(){
-    //     if(this.isGameOver){
-    //         return;
-    //     }
-    //     if(this.GetComponent<Rigidbody>().velocity.y > 0){
-    //         this.GetComponent<Rigidbody>().MoveRotation(Quaternion.Euler(0, 180, -20f));
-    //     }
-    //     else{
-    //         this.GetComponent<Rigidbody>().MoveRotation(Quaternion.Euler(0, 180, 20f));
-    //     }
-
-    //     if(Input.GetKeyDown("space")){
-    //         // if(this.score.text == "Flappy Bird"){
-    //         //     this.score.text = "0";
-    //         //     this.GetComponent<Rigidbody>().isKinematic = false;
-    //         // }
-    //         this.GetComponent<Rigidbody>().velocity = new Vector3(10, 0, 0);
-    //         this.GetComponent<Rigidbody>().AddForce(Vector3.up * 50f, ForceMode.Impulse);
-    //     }
-    // }
+    void OnTriggerEnter(Collider other){
+        if(other.gameObject.tag == "obstacle"){
+            isGameOver = true;
+            Debug.Log(1);
+            GetComponent<Rigidbody>().isKinematic = true;
+        }
+        else{
+            Debug.Log(other.gameObject.name);
+        }
+    }
     void Update(){
         if(!isGameStart){
             bird.GetComponent<Animation>().Play();
         }
-        else{
+        else if(isGameStart && !isGameOver){
             if(Input.GetKeyDown(KeyCode.Space)){
                 this.GetComponent<Rigidbody>().velocity = Vector3.up * this.jump_speed;
                 bird.GetComponent<Animation>().Stop();
