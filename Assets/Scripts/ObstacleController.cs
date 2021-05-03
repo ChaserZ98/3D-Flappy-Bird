@@ -14,16 +14,13 @@ public class ObstacleController : MonoBehaviour{
     // public int fps = 60;
     // Start is called before the first frame update
     void Start(){
+        GameObject[] obstacles = GameObject.FindGameObjectsWithTag("obstacleContainer");
+        foreach(GameObject obstacle in obstacles){
+            Destroy(obstacle);
+        }
         generationPositionX = -30f;
         isGameStart = false;
         isGameOver = false;
-
-        // InvokeRepeating("CreateObject", 0.0f, 3.5f);
-        // int[] array = GetRandomArray(-8, 8, 9, 2);
-        // Debug.Log("length " + array.Length);
-        // for(int i = 0; i < array.Length; i++){
-        //     Debug.Log(array[i]);
-        // }
     }
 
     // Update is called once per frame

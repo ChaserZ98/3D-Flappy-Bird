@@ -26,7 +26,6 @@ public class BirdController : MonoBehaviour{
         transform.localEulerAngles = new Vector3(0f, 90f, 0);
         Animation animation = bird.GetComponent<Animation>();
         animation.Stop();
-        
     }
     void OnTriggerEnter(Collider other){
         if(other.gameObject.tag == "obstacle"){
@@ -35,7 +34,6 @@ public class BirdController : MonoBehaviour{
             AudioManager.instance.Stop("bg");
             AudioManager.instance.Play("hit");
             canvas.SendMessage("showGameOverMenu");
-            AudioManager.instance.Play("gameOver");
         }
         else{
             // Debug.Log(other.gameObject.name);

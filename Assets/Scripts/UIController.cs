@@ -9,15 +9,21 @@ public class UIController : MonoBehaviour
 	public GameObject scoreBoard;
     public GameObject gameOverMenu;
     public GameObject finalScore;
+    public GameObject bestScoreTextGameStart;
+    public GameObject newBest;
     public int score;
+    public int bestScore;
     // Start is called before the first frame update
     void Start()
     {
+        bestScore = PlayerPrefs.GetInt("BestScore");
+        bestScoreTextGameStart.GetComponent<Text>().text = bestScore.ToString();
+        // Debug.Log(bestScore);
         score = 0;
     	startMenu.SetActive(true);
     	// scoreBoard = GameObject.Find("Canvas/Score");
     	scoreBoard.SetActive(false);
-        // gameOverMenu = GameObject.Find("Canvas/GameOverMenu");
+        newBest.SetActive(false);
         gameOverMenu.SetActive(false);
     }
 
@@ -41,6 +47,10 @@ public class UIController : MonoBehaviour
         scoreBoard.SetActive(false);
         gameOverMenu.SetActive(true);
         AudioManager.instance.Play("gameOver");
+        if(score > bestScore){
+            PlayerPrefs.SetInt("BestScore", score);
+            newBest.SetActive(true);
+        }
     }
     void addPoint(){
         score++;
