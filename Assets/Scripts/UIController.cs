@@ -7,14 +7,18 @@ public class UIController : MonoBehaviour
 {
 	public GameObject startMenu;
 	public GameObject scoreBoard;
+    public GameObject gameOverMenu;
+    public GameObject finalScore;
     public int score;
     // Start is called before the first frame update
     void Start()
     {
         score = 0;
     	startMenu.SetActive(true);
-    	scoreBoard = GameObject.Find("Canvas/Score");
+    	// scoreBoard = GameObject.Find("Canvas/Score");
     	scoreBoard.SetActive(false);
+        // gameOverMenu = GameObject.Find("Canvas/GameOverMenu");
+        gameOverMenu.SetActive(false);
     }
 
     // Update is called once per frame
@@ -27,12 +31,20 @@ public class UIController : MonoBehaviour
     	startMenu.SetActive(false);
     	scoreBoard.GetComponent<Text>().text = score.ToString();
     	scoreBoard.SetActive(true);
+        AudioManager.instance.Play("bg");
     }
     void showStartMenu(){
     	startMenu.SetActive(true);
     }
+    void showGameOverMenu(){
+        finalScore.GetComponent<Text>().text = score.ToString();
+        scoreBoard.SetActive(false);
+        gameOverMenu.SetActive(true);
+        AudioManager.instance.Play("gameOver");
+    }
     void addPoint(){
         score++;
         scoreBoard.GetComponent<Text>().text = score.ToString();
+        AudioManager.instance.Play("getPoint");
     }
 }

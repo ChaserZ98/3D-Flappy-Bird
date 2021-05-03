@@ -17,8 +17,22 @@ public class CameraController : MonoBehaviour
     void Update()
     {
         transform.position = offset + birdTransform.position;
-        // if(transform.position.y <= 0){
-        //     transform.position.y = 0;
-        // }
+        // Vector3 newPosition = offset + birdTransform.position;
+        // transform.position = moveCamera(newPosition);
     }
+    // Vector3 moveCamera(Vector3 newPosition){
+    //     float newX = newPosition.x;
+    //     float newY = newPosition.y;
+    //     float newZ = newPosition.z;
+    //     if(newPosition.y <= 2.3f){
+    //         newY = 2.3f;
+    //     }
+    //     if(newZ <= -4.8f){
+    //         newZ = -4.8f;
+    //     }
+    //     if(newZ >= 4.8f){
+    //         newZ = 4.8f;
+    //     }
+    //     return new Vector3(newX, newY, newZ);
+    // }
 }
