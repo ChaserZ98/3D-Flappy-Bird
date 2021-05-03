@@ -27,6 +27,7 @@ public class UIController : MonoBehaviour
     	startMenu.SetActive(false);
     	scoreBoard.GetComponent<Text>().text = score.ToString();
     	scoreBoard.SetActive(true);
+        AudioManager.instance.Play("bg");
     }
     void showStartMenu(){
     	startMenu.SetActive(true);
@@ -34,5 +35,6 @@ public class UIController : MonoBehaviour
     void addPoint(){
         score++;
         scoreBoard.GetComponent<Text>().text = score.ToString();
+        AudioManager.instance.Play("1point");
     }
 }

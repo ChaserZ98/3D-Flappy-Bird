@@ -6,6 +6,7 @@ public class BirdController : MonoBehaviour{
     // public Text score;
     public bool isGameOver = false;
     public bool isGameStart = false;
+    
     // public GameObject camera;
 
     public float jump_speed = 5.0f;
@@ -24,12 +25,14 @@ public class BirdController : MonoBehaviour{
         transform.localEulerAngles = new Vector3(0f, 90f, 0);
         Animation animation = bird.GetComponent<Animation>();
         animation.Stop();
+        
     }
     void OnTriggerEnter(Collider other){
         if(other.gameObject.tag == "obstacle"){
             isGameOver = true;
             // Debug.Log(1);
             GetComponent<Rigidbody>().isKinematic = true;
+            AudioManager.instance.Play("hit");
         }
         else{
             // Debug.Log(other.gameObject.name);
@@ -44,6 +47,7 @@ public class BirdController : MonoBehaviour{
                 this.GetComponent<Rigidbody>().velocity = Vector3.up * this.jump_speed;
                 bird.GetComponent<Animation>().Stop();
                 bird.GetComponent<Animation>().Play();
+                AudioManager.instance.Play("fly");
             }
             if(Input.GetKey(KeyCode.A)){
                 transform.Translate(Vector3.right * Time.deltaTime * 4);
